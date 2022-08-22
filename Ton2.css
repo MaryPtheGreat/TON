@@ -26,7 +26,12 @@ margin:auto}
 nav{
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    text-align: center;
+    padding: 16px 0px;
+    display: flex;
+    top:0;
+    background-color: #232328;
+    width: 100%;
 }
 
 nav .logo {color: white;}
@@ -81,10 +86,10 @@ border-radius: 22px;}
 
 .info .info-description{text-align: center;}
 
-.info .container .network-info {display: flex;
+.network-info {display: flex;
 justify-content: space-between;}
 
-.info .network-info .stat {width: 32%;
+.network-info .stat {width: 32%;
 background-color: var(--background_light_main);
 padding: 8px;
 border-radius: 16px;
@@ -92,11 +97,11 @@ position: relative;
 overflow: hidden;} 
 
 
-.info .network-info .stat .stat-title {margin-bottom: 8px;}
-.info .network-info .stat .stat-count { font-size: 24px;
+.network-info .stat .stat-title {margin-bottom: 8px;}
+.network-info .stat .stat-count { font-size: 24px;
 font-weight: bold;}
 
-.info .network-info .stat .img {position:absolute;
+.network-info .stat .img {position:absolute;
 right:0;
 top: 50%;
 transform:translate(30%, -50%);
@@ -104,20 +109,143 @@ height:64px;
 z-index:0;
 opacity:0.1;}
 
-.info .network-info .stat .stat-title, .stat-count {position: relative; z-index: 1;}
+.network-info .stat .stat-title, .stat-count {position: relative; z-index: 1;}
+
+.tonbox{border: solid;
+border-radius: 10px;
+margin: 0px 0px 8px;
+padding: 1px 10px;
+color:#728A96}
 
 .coin{display: flex;
-background-color: #ccc;
+background-color: #f7f9fb;
 justify-content: space-between;
 padding: 32px;
-border-radius: 16px
-;}
+border-radius: 16px;}
 
-.coin .container {
+.coin {
     max-width: calc(var(--container-width) + 64px);
 }
+.matncoin{color: #728A96;}
+.coinpic{max-width: 1150px;}
 
 
+.developers{
+    background-color: #232328;
+    color: #fff;
+    padding: 64px 0;
+}
+
+.developers .description{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 64px;}
+
+.developers .description h3{
+font-size: 64px;
+margin: 0;
+}
+
+.developers .developers-content{display: flex;
+flex-direction: column;
+align-items: center;}
+
+.developers .description p{margin-bottom: 32px;}
+
+.developers .browser{
+    background-color: #2f2f33;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.developers .browser .browser-buttons{
+    background-color: #29292E;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.developers .browser .browser-button{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #06a1ef;
+    margin-right: 8px;
+}
+
+.developers .browser .red{background-color: #ed6a5e;}
+.developers .browser .yellow{background-color: #f6be4f;}
+.developers .browser .green{background-color: #62c554;}
 
 
+.developers .browser .browser-content{
+    display: flex;
+}
+
+.developers .browser .tabs{
+width: 40%;
+display: flex;
+flex-direction: column;
+}
+
+.developers .browser .tabs a{
+    color: #fff;
+    padding: 16px 0 16px 32px;
+}
+
+.wikilink{color: #fff;
+text-decoration: underline;
+padding-bottom: 15px;}
+
+.developers .browser .tabs a:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.developers .browser .content{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.developers .browser .content footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Button__after Button__after--arrow{color: #06a1ef;}
+
+.matnActorModel{line-height: 24px;
+font-size: 16px;
+font-family: IBMPlexMono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;}
+.h4actormodel{font-size: 18px;}
+
+.linkreadmore{font-size: 14px;
+color: #07A0EC;
+display: inline;}
+
+/*.linkreadmore::after{content: somehow connect this pseudo class with the arrow css code;}*/
+
+.arrow{display: inline;
+color: #07A0EC;
+width: 24;
+height: 24;
+fill:none}
+
+
+.footerlink1{font-family: IBMPlexMono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+font-weight: 700;
+color: #fff;}
+
+.footerlink1::before{content: "< ";}
+
+.footerlink2{font-family: IBMPlexMono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    color: #fff;}
+
+    .footerlink2::after{content: " >";}
 
